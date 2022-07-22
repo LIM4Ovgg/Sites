@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LIM4O</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href=""><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\logo.png" class="logo"></a>	
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul  class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="C:\Users\ViniG\Desktop\Sites\Meu site\site 2\index2.html">What's New</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+			<div class="content">
+				<div class="textBox">
+					<h2>It's not just Fruit<br>It's <span>LIM4O</span></h2>
+					<p>Limão (espécie Citrus limon) é o fruto do limoeiro, uma pequena árvore de folha perene originária da região sudeste da Ásia, da família das rutáceas. No Brasil é também popularmente denominado limão siciliano, de forma a distingui-lo de três outras espécies de citrinos chamadas de "limões" no Brasil e "limas" nos restantes países lusófonos: Citrus × latifolia ou limão-taiti, Citrus aurantiifolia ou limão-galego, Citrus x limonia ou limão-cravo.</p>
+					<a href="https://pt.wikipedia.org/wiki/Limão">Learn More</a>
+				</div>
+				<div class="imgBox">
+					<img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\img1.png" class="starbucks">
+				</div>
+			</div>
+			<ul class="thumb">
+				<li><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\thumb1.png" onclick="imgSlider('C:/Users/ViniG/Desktop/Sites/Meu site/images/img1.png');changeCircleColor('#017143')"></li>
+				<li><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\thumb2.png" onclick="imgSlider('C:/Users/ViniG/Desktop/Sites/Meu site/images/img2.png');changeCircleColor('#ffff00')"></li>
+				<li><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\thumb3.png" onclick="imgSlider('C:/Users/ViniG/Desktop/Sites/Meu site/images/img3.png');changeCircleColor('#ffa500')"></li>
+			</ul>
+			<ul class="sci">
+				<li><a href="https://www.facebook.com/vinicius.goncalves.754703/"><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\facebook.png"></a></li>
+				<li><a href="https://twitter.com/LIM4O_vgg"><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\twitter.png"></a></li>
+				<li><a href="https://www.instagram.com/lim4o_ofc/"><img src="C:\Users\ViniG\Desktop\Sites\Meu site\images\instagram.png"></a></li>
+			</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle')
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
